@@ -59,23 +59,23 @@ const now = new Date();
        let greeting;
 
         if (hour >= 0 && hour < 12) {
-          greeting = "Ohayou gozaimasu"; //good morning
+          greeting = "Good Morning"; //good morning
         } else if (hour >= 12 && hour < 18) {
-          greeting = "Konnichiwa"; //good afternoon
+          greeting = "Good Afternoon"; //good afternoon
         } else {
-          greeting = "Konbanwa"; //good evening
+          greeting = "Good evening"; //good evening
         }
-      let textHelpMenu = `${greeting} *${pushName}* Senpai,
+      let textHelpMenu = `${greeting} *${pushName}* Sir,
 
-I am *${botName}*, a bot developed by *Team Atlas*.
+I am *${botName}*, a bot developed by *A Genius*.
 
-🎀 My prefix is: *${prefix}*
+✨ My prefix is: *${prefix}*
 
-🧩 Server Uptime: *${uptime()}*
+✨ Server Uptime: *${uptime()}*
 
 Here's the list of my Commands.\n
            
-╭──────ꕥ Core ꕥ─────╮
+╭──────ꕥ Damn ꕥ─────╮
 ├
 ├・🎐 ʜɪ, ʜᴇʟᴘ, 
 ├・🎐 ᴄᴏᴜᴘʟᴇᴘᴘ, ᴏᴡɴᴇʀ, 
@@ -292,8 +292,8 @@ Here's the list of my Commands.\n
 ╰──────────────────╯\n\n`;
       }
 
-      textHelpMenu += `*🔰  ${botName}  🔰*
- _Powered By:_ *Team ATLAS*
+      textHelpMenu += `*✨  ${botName}  ✨*
+ _Powered By:_ *A Genius*
 
 🎀 To use any of these commands type " *${prefix}Command name* ".
 
@@ -301,7 +301,7 @@ Here's the list of my Commands.\n
 
 🧩 To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`;
 
-      await Miku.sendMessage(m.from, {video: { url: botVideo }, gifPlayback: true, caption: textHelpMenu,}, { quoted: m });
+      await Miku.sendMessage(m.from, {video: { url: 'google.com'}, gifPlayback: true, caption: textHelpMenu,}, { quoted: m });
     }
   },
 };
